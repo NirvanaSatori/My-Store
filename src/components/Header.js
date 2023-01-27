@@ -4,7 +4,15 @@ import { CartState } from "../context/Context";
 import "./styles.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
-
+import {
+    Badge,
+    Button,
+    Container,
+    Dropdown,
+    FormControl,
+    Nav,
+    Navbar,
+  } from "react-bootstrap";
 
 function Header() {
 
