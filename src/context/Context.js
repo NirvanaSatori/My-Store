@@ -1,6 +1,6 @@
-import React, {createContext, useContext} from 'react'
+import React, {createContext, useContext, useReducer } from 'react'
 import faker from "faker"
-import Reducers from './Reducers';
+import { cartReducer, productReducer } from "./Reducers";
 
 const Cart = createContext();
 
@@ -36,9 +36,10 @@ function Context({children}) {
     </Cart.Provider>
   )
 }
-
-export default Context
-
 export const CartState = ()=>{
     return useContext(Cart)
 }
+
+export default Context
+
+
