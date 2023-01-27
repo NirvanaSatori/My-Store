@@ -54,4 +54,5 @@ function SingleProducts({prod}) {
         </div>
       );
     };
+    
 export default SingleProducts

@@ -50,11 +50,11 @@ function Home() {
       <Filters />
       <div className="productContainer">
         {transformProducts().map((prod) => (
-          <SingleProduct prod={prod} key={prod.id} />
+          <SingleProducts prod={prod} key={prod.id} />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home
