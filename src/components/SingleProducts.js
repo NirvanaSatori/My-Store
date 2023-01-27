@@ -48,7 +48,10 @@ function SingleProducts({prod}) {
             >
               {!prod.inStock ? "Out of Stock" : "Add to Cart"}
             </Button>
-  )
-}
-
+            )}
+            </Card.Body>
+          </Card>
+        </div>
+      );
+    };
 export default SingleProducts
