@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import { BrowserRouter, Route } from "react-router-dom";
+import React from 'react';
 
 function App() {
   return (
