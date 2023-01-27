@@ -5,6 +5,7 @@ import { faker } from '@faker-js/faker';
 
 
 
+
 const Cart = createContext();
 faker.seed(99);
 
@@ -17,15 +18,14 @@ function Context({children}) {
         // inStock: faker.random.arrayElement([0, 3, 5, 6, 7]),
         // fastDelivery: faker.datatype.boolean(),
         // ratings: faker.random.arrayElement([1, 2, 3, 4, 5]),
-        
-          userId: faker.datatype.uuid(),
-          username: faker.internet.userName(),
-          email: faker.internet.email(),
-          avatar: faker.image.avatar(),
-          password: faker.internet.password(),
-          birthdate: faker.date.birthdate(),
-          registeredAt: faker.date.past(),
-        
+
+    userId: faker.datatype.uuid(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    avatar: faker.image.avatar(),
+    password: faker.internet.password(),
+    birthdate: faker.date.birthdate(),
+    registeredAt: faker.date.past(),
       }));
 
       const [state, dispatch] = useReducer(cartReducer, {

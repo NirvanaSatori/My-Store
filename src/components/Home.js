@@ -50,7 +50,8 @@ function Home() {
       <Filters />
       <div className="productContainer">
         {transformProducts().map((prod) => (
-          <SingleProducts prod={prod} key={prod.id} />
+          // <SingleProducts prod={prod} key={prod.id} />
+          <SingleProducts prod={prod} key={prod.userId} />
         ))}
       </div>
     </div>

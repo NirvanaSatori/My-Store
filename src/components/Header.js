@@ -57,15 +57,17 @@ function Header() {
               {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (
-                    <span className="cartitem" key={prod.id}>
+                    // <span className="cartitem" key={prod.id}>
+                    <span className="cartitem" key={prod.userId}>
                       <img
-                        src={prod.image}
+                        // src={prod.image}
+                        src={prod.avatar}
                         className="cartItemImg"
                         alt={prod.name}
                       />
                       <div className="cartItemDetail">
                         <span>{prod.name}</span>
-                        <span>₹ {prod.price.split(".")[0]}</span>
+                        <span>$ {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
                         fontSize="20px"

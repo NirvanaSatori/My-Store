@@ -24,10 +24,12 @@ function Cart() {
       <div className="productContainer">
         <ListGroup>
           {cart.map((prod) => (
-            <ListGroup.Item key={prod.id}>
+            // <ListGroup.Item key={prod.id}>
+            <ListGroup.Item key={prod.userId}>
               <Row>
                 <Col md={2}>
-                  <Image src={prod.image} alt={prod.name} fluid rounded />
+                  {/* <Image src={prod.image} alt={prod.name} fluid rounded /> */}
+                  <Image src={prod.avatar} alt={prod.name} fluid rounded />
                 </Col>
                 <Col md={2}>
                   <span>{prod.name}</span>
@@ -44,7 +46,8 @@ function Cart() {
                       dispatch({
                         type: "CHANGE_CART_QTY",
                         payload: {
-                          id: prod.id,
+                          // id: prod.id,
+                          id: prod.userId,
                           qty: e.target.value,
                         },
                       })
