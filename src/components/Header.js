@@ -2,10 +2,10 @@ import React from 'react'
 import { Container, Navbar } from 'react-bootstrap'
 
 function Header() {
-  return <Navbar>
+  return <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
     <Container>
         <Navbar.Brand>
-            <a href="/"> Shopping Cart</a>
+        <Link to="/">Shopping Cart</Link>
         </Navbar.Brand>
     </Container>
   </Navbar>
