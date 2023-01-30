@@ -8,6 +8,7 @@ The app will demonstrate a basic cart management system, as well as a simple met
 - Users can filter through products to get their specific products easily,
 - Users can search for a product
 - Users will be able to checkout and get a thanks message from purchase store
+- The app uses useReduce and Context to achieve most of these
 
 ## Available Scripts
 
