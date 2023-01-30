@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# MyStore E-Commerce site
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The app will demonstrate a basic cart management system, as well as a simple method of handling user authentication using forms.
+- Users will be able to have items to add to cart
+- Users can add goods and remove them from the cart to buy later
+- Users can filter through products to get their specific products easily,
+- Users can search for a product
+- Users will be able to checkout and get a thanks message from purchase store
 
 ## Available Scripts
 
